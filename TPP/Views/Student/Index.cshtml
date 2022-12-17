@@ -1,0 +1,33 @@
+﻿@{
+    @model IEnumerable<String>
+
+}
+
+<h1 style="color:DodgerBlue;">
+    <center> List of  Courses </center>
+    </style>
+</h1>
+<br>
+<table class="table table-dark">
+
+    <thead>
+        <tr>
+            <th scope="col"><center>Course </center></th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+
+                <td>
+
+                    <a href="GetStudentsByCourse/@c" style="text-decoration:none;"> <center> @c</center> </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
